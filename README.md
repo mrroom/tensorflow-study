@@ -4,3 +4,4 @@
 - [텐서플로 1 코드를 텐서플로 2로 바꾸기](https://www.tensorflow.org/guide/migrate?hl=ko)
 - [Tensorflow 2.0 변경된 점](https://provia.tistory.com/78)
 - [리뷰 | 텐서플로우 2, "더 쉬워진 머신러닝"](http://www.itworld.co.kr/news/125595)
+- [[tensoflow 2.0] 2. 텐서플로 사용하기](https://leejigun.github.io/tensorflow2_2)
