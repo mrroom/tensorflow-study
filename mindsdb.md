@@ -28,4 +28,15 @@ INSERT INTO mindsdb.predictors
        (name, predict, select_data_query)
 VALUES ('bikes_model', 'count', 'SELECT * FROM test.bike_data');
 
+SELECT count, count_confidence
+         FROM mindsdb.bikes_model
+         WHERE datetime='2011-01-20 00:00:00' AND
+               season='1' AND
+               holiday='0' AND
+               workingday='1' AND
+               weather='1' AND
+               temp='10.66' AND
+               atemp='11.365' AND
+               humidity='56' AND
+               windspeed='26.0027';
 ~~~
