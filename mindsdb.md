@@ -1,4 +1,5 @@
 ## 참고 사이트
+- [What’s New: MindsDB October 2020 Product Updates and Community Shoutouts](https://www.mindsdb.com/blog)
 - [Machine Learning straight through SQL](https://mariadb.org/machine-learning-sql/)
 - [Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand/)
 
