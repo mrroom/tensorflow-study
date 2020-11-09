@@ -261,3 +261,27 @@ print("테스트 세트의 정확도: {:.2f}".format(np.mean(y_pred == y_test)))
      2]
     테스트 세트의 정확도: 0.97
     
+
+
+```python
+# 참고 데이터와 레이블로 나누기 옵션 및 DataFrame 옵션
+from sklearn import datasets
+X,y = datasets.load_iris(return_X_y=True) # numpy arrays
+print(type(X), X.shape)
+print(type(y), y.shape)
+
+dic_data = datasets.load_iris(as_frame=True)
+print(dic_data.keys())
+print(type(dic_data))
+
+#df = dic_data['frame'] # pandas dataframe data + target
+#df_X = dic_data['data'] # pandas dataframe data only
+#ser_y = dic_data['target'] # pandas series target only
+#dic_data['target_names'] # numpy array
+```
+
+    <class 'numpy.ndarray'> (150, 4)
+    <class 'numpy.ndarray'> (150,)
+    dict_keys(['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names', 'filename'])
+    <class 'sklearn.utils.Bunch'>
+    
