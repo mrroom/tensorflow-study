@@ -8,6 +8,13 @@
   - 하이퍼 파라미터(초매개변수) : 모델링할 때 사용자가 직접 세팅해주는 값, 학습률(learning rate), 서포트 벡터 머신의 C, sigma값, KNN의 K값, 모델의 파라미터를 조정한다(X) => 모델의 하이퍼 파라미터를 조정한다(O), 정해진 최적의 값이 없고 경험에 의해서, 모델의 정확도를 높이기 위해 학습을 튜닝하는 변수
   - 사전 학습된 이미지 분류(CNN) 모델 ('AlexNet', 'DenseNet', 'GoogLeNet', 'Inception3', 'MobileNetV2', 'ResNet', 'ShuffleNetV2', 'SqueezeNet', 'VGG', 'alexnet', 'densenet', 'densenet121', 'densenet161', 'densenet169', 'densenet201', 'detection', 'googlenet', 'inception', 'inception_v3')  
     ![Pre-trained Models for Image Classification](https://www.learnopencv.com/wp-content/uploads/2019/06/Model_Timeline.png)
+  - 전이학습(Transfer Learning) : 사과 깎는 방법을 익힌 AI에게 배를 깎도록 하는 것, 비가 올 확률을 예측하는 AI에게 눈이 올 확률을 예측, 구글의 티처블 머신, Toonify Yourself, 
+  - 모델 개선
+    - 데이터 추가 : 모델이 더 많은 예제를 학습할수록 성능이 향상
+    - 데이터 보강 : 데이터에 다양성을 추가하는 일반적인 방법은 이미지에 다양한 변환(회전, 대칭 이동, 이동, 자르기)을 적용하여 데이터를 보강
+    - 학습 시간 연장 : 학습 시간이 길수록 모델이 더 튜닝됩니다. Epoch 수를 늘리면 모델의 성능이 향상
+    - 하이퍼 매개 변수로 실험 : 사용된 매개 변수 외에 다른 매개 변수를 튜닝하여 성능을 개선. 각 Epoch 후의 모델 업데이트 크기를 결정하는 학습 속도를 변경하면 성능이 향상
+    - 다른 모델 아키텍처 사용 : 데이터 모양에 따라 기능 학습에 가장 적합한 모델이 다를 수 있어 모델의 성능이 만족스럽지 않으면 아키텍처를 변경
 
 ## tensorflow 1.x vs 2.x
 - ['파이토치' vs. '텐서플로우'··· 딥러닝 프레임워크 선택하기](http://www.ciokorea.com/news/129667)
