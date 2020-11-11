@@ -8,7 +8,9 @@
   - 하이퍼 파라미터(초매개변수) : 모델링할 때 사용자가 직접 세팅해주는 값, 학습률(learning rate), 서포트 벡터 머신의 C, sigma값, KNN의 K값, 모델의 파라미터를 조정한다(X) => 모델의 하이퍼 파라미터를 조정한다(O), 정해진 최적의 값이 없고 경험에 의해서, 모델의 정확도를 높이기 위해 학습을 튜닝하는 변수
   - 사전 학습된 이미지 분류(CNN) 모델 ('AlexNet', 'DenseNet', 'GoogLeNet', 'Inception3', 'MobileNetV2', 'ResNet', 'ShuffleNetV2', 'SqueezeNet', 'VGG', 'alexnet', 'densenet', 'densenet121', 'densenet161', 'densenet169', 'densenet201', 'detection', 'googlenet', 'inception', 'inception_v3')  
     ![Pre-trained Models for Image Classification](https://www.learnopencv.com/wp-content/uploads/2019/06/Model_Timeline.png)
-  - 전이학습(Transfer Learning) : 사과 깎는 방법을 익힌 AI에게 배를 깎도록 하는 것, 비가 올 확률을 예측하는 AI에게 눈이 올 확률을 예측, 구글의 티처블 머신, Toonify Yourself, 
+  - 전이학습(Transfer Learning) : 사과 깎는 방법을 익힌 AI에게 배를 깎도록 하는 것, 비가 올 확률을 예측하는 AI에게 눈이 올 확률을 예측, 구글의 티처블 머신, Toonify Yourself
+    - 특징 추출을 위해 사전 훈련된 모델 사용 : 사전 훈련된 모델을 인스턴스화하고 완전히 연결된 분류기를 맨 위에 추가. 사전 훈련된 모델은 고정되고 분류기의 가중치만 훈련 중에 업데이트. 컨벌루션 베이스 모델은 각 이미지와 관련된 모든 특징을 추출하며 주어진 추출된 특징을 가지고 이미지 클래스를 결정하는 분류기를 훈련
+    - 사전 훈련된 모델을 미세 조정 : 성능을 더욱 향상시키기 위해 사전 훈련된 모델의 최상위 계층을 미세 조정을 통해 새 데이터셋으로써 재사용. 모델이 주어진 데이터셋에 맞는 상위 레벨의 특징을 학습 할 수 있도록 가중치를 조정 일반적으로 훈련 데이터셋의 규모가 크고, 사전 훈련된 모델이 사용했던 원래 데이터셋과 매우 유사한 경우에 권장
   - 모델 개선
     - 데이터 추가 : 모델이 더 많은 예제를 학습할수록 성능이 향상
     - 데이터 보강 : 데이터에 다양성을 추가하는 일반적인 방법은 이미지에 다양한 변환(회전, 대칭 이동, 이동, 자르기)을 적용하여 데이터를 보강
