@@ -25,8 +25,8 @@
   - 사전 학습된 딥러닝 기반 언어 모델 : ELMo, GPT-1, BERT, RoBERTa, ALBERT, T5
   - 레이어
     -  Dense 레이어(전결합층) : 입출력을 모두 연결, 예를 들어 입력 뉴런이 4개, 출력 뉴런이 8개있다면 총 연결선은 32개(4x8=32) 입니다. 각 연결선에는 가중치(weight)를 포함하고 있는데, 이 가중치가 나타내는 의미는 연결강도라고 보시면 됩니다. 현재 연결선이 32개이므로 가중치도 32개입니다.  
-      ex) Dense(8, input_dim=4, init='uniform', activation='relu')), 1) 출력 뉴런의 수, 2) 입력 뉴런의 수, 3) 가중치 초기화 방법(uniform(균일), normal(정규)), 4) 활성화 함수(linear(기본), relu(은닉층), sigmoid(이진분류), softmax(다중클래스분류)))
-      ex) Dense(1, input_dim=3, activation='sigmoid')) # 출력(이진분류), Dense(3, input_dim=4, activation='softmax')) # 출력(다중클래스분류), Dense(4, input_dim=6, activation='relu')) # 은닉
+      ex) Dense(8, input_dim=4, init='uniform', activation='relu')), 1) 출력 뉴런의 수, 2) 입력 뉴런의 수, 3) 가중치 초기화 방법(uniform(균일), normal(정규)), 4) 활성화 함수(linear(기본), relu(은닉층), sigmoid(이진분류), softmax(다중클래스분류)))  
+      ex) Dense(1, input_dim=3, activation='sigmoid')) # 출력(이진분류), Dense(3, input_dim=4, activation='softmax')) # 출력(다중클래스분류), Dense(4, input_dim=6, activation='relu')) # 은닉  
     - [컨볼루션 신경망 레이어](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/) 
 
 ## tensorflow 1.x vs 2.x
