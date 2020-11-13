@@ -17,6 +17,8 @@
     
   - 학습과정 표시  
     1. 히스토리 기능 사용 : 매 에포크 마다의 훈련 손실값 (loss), 매 에포크 마다의 훈련 정확도 (acc), 매 에포크 마다의 검증 손실값 (val_loss), 매 에포크 마다의 검증 정확도 (val_acc)
+      x : 에포크, y1 : 손실, y2 : 정확도, lgend : y1_loss, y1_val_loss, y2_acc, y2_val_acc => 오버핏 확인  
+      ![히스토리](http://tykimos.github.io/warehouse/2017-7-9-Training_Monitoring_output_7_2.png)
     2. 텐서보드와 연동
     3. 콜백함수 만들기
     
