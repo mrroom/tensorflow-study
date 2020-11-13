@@ -25,7 +25,7 @@
   - 사전 학습된 딥러닝 기반 언어 모델 : ELMo, GPT-1, BERT, RoBERTa, ALBERT, T5
   - 레이어
     -  Dense 레이어(전결합층) : 입출력을 모두 연결, 예를 들어 입력 뉴런이 4개, 출력 뉴런이 8개있다면 총 연결선은 32개(4x8=32) 입니다. 각 연결선에는 가중치(weight)를 포함하고 있는데, 이 가중치가 나타내는 의미는 연결강도라고 보시면 됩니다. 현재 연결선이 32개이므로 가중치도 32개입니다.
-       : Dense(8, input_dim=4, init='uniform', activation='relu')), 1) 출력 뉴런의 수, 2) 입력 뉴런의 수, 3) 가중치 초기화 방법, 4) 활성화 함수(linear(기본), relu(은닉층), sigmoid(이진분류), softmax(다중클래스분류)))
+      ex) Dense(8, input_dim=4, init='uniform', activation='relu')), 1) 출력 뉴런의 수, 2) 입력 뉴런의 수, 3) 가중치 초기화 방법, 4) 활성화 함수(linear(기본), relu(은닉층), sigmoid(이진분류), softmax(다중클래스분류)))
 
 ## tensorflow 1.x vs 2.x
 - ['파이토치' vs. '텐서플로우'··· 딥러닝 프레임워크 선택하기](http://www.ciokorea.com/news/129667)
